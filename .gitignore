@@ -1,0 +1,12 @@
+build/
+install/
+log/
+logs/
+terrain/
+__pycache__/
+*.pyc
+*.tlog
+*.tlog.raw
+mav.parm
+mav_*.parm
+eeprom.bin
