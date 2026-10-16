@@ -8,6 +8,7 @@ from .setting_guided import SettingGuidedHandler
 from .taking_off import TakingOffHandler
 from .waiting_for_landing import WaitingForLandingHandler
 from .waiting_for_system import WaitingForSystemHandler
+from .flying import FlyingHandler
 
 HANDLERS: dict[FlightState, FlightStateHandler] = {
     FlightState.WAITING_FOR_SYSTEM: WaitingForSystemHandler(),
@@ -16,6 +17,8 @@ HANDLERS: dict[FlightState, FlightStateHandler] = {
     FlightState.ARMING: ArmingHandler(),
     FlightState.TAKING_OFF: TakingOffHandler(),
     FlightState.HOVERING: HoveringHandler(),
+    FlightState.FLYING: FlyingHandler(),
     FlightState.LANDING: LandingHandler(),
     FlightState.WAITING_FOR_LANDING: WaitingForLandingHandler(),
+    
 }

@@ -7,6 +7,7 @@ class FlightState(Enum):
     ARMING = auto()
     TAKING_OFF = auto()
     HOVERING = auto()
+    FLYING = auto()
     LANDING = auto()
     WAITING_FOR_LANDING = auto()
     FINISHED = auto()
